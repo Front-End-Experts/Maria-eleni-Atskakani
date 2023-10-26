@@ -1,0 +1,33 @@
+
+/* a) Set a background color for the entire menu (element selector - id selector)*/
+/* Adjust the spacing, padding, and margin as needed to make the menu visually appealing*/
+
+#main-menu{
+    background-color: #d3d0be;
+    color: #ff7fdf;
+    padding: 100px;
+    margin: 300px;
+    width: 100px
+}
+/* b) Style the text color for the navigation items (element selector) - (id selector: Style specific navigation items based on an attribute (e.g., if you have a "data-highlight" attribute)*/
+#data-highlight { 
+    color:#040304;
+    }
+
+ /*Add a hover effect when users hover over the navigation items (class selector)*/   
+#main-menu li a:hover {
+    color:bisque ;
+}
+
+/*Style elements that are descendants of another element (descedent selector - e.g.: style links within the menu items)  */
+div  {
+    background-color: yellow;
+  }
+
+  div - ul a {  /*Add styles to an element that comes immediately after another element  */
+    color:#d71313;
+}
+
+li:nth-child(3) {
+    background: lightgreen;
+}
