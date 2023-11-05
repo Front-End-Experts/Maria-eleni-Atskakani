@@ -1,0 +1,30 @@
+/* Define variables for reusability */
+body {
+  background-color: #e9e4e4;
+}
+
+h2 {
+  color: rgb(219, 219, 225);
+  background-color: rgb(190, 59, 59);
+}
+
+/* Flexbox styles for product cards grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row .col-md-4 {
+  flex: 1 0 calc(33.333% - 20px);
+}
+
+/* Custom styles for the header */
+header {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+}/*# sourceMappingURL=workshop2.css.map */

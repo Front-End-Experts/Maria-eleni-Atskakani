@@ -1,0 +1,61 @@
+/* Define variables for reusability */
+body {
+  background-color: #777777;
+}
+
+h1 {
+  color: rgb(231, 228, 228);
+  background-color: rgb(206, 26, 26);
+}
+
+/* Apply styles to product cards */
+.product-card {
+  border: 1px solid #db1313;
+  padding: 15px;
+  margin: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+}
+.product-card h2 {
+  font-size: 1.5rem;
+  color: #060706;
+}
+.product-card p {
+  font-size: 1rem;
+  color: #000000;
+}
+.product-card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(6, 7, 6, 0.5);
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .product-card {
+    margin: 100px;
+    border: 3px solid black;
+  }
+}
+/* Custom styles for the header */
+header {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+}
+
+/* Flexbox styles for product cards grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row .col-md-4 {
+  flex: 1 0 calc(33.333% - 20px);
+}/*# sourceMappingURL=workshop1.css.map */

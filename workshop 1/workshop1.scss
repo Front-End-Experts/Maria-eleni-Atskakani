@@ -1,0 +1,72 @@
+/* Define variables for reusability */
+$primary-color: #060706;
+$secondary-color: #FF6B6B;
+body {
+    background-color:#777777
+}
+h1 {
+    color: rgb(231, 228, 228);
+    background-color: rgb(206, 26, 26);
+  }
+
+/* Apply styles to product cards */
+.product-card {
+    border: 1px solid #db1313;
+    padding: 15px;
+    margin: 10px;
+    transition: background-color 0.3s;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #000000;
+    }
+
+    &:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba($primary-color, 0.5);
+    }
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .product-card {
+        margin: 100px;
+        border: 3px solid black;
+    }
+}
+
+/* Custom styles for the header */
+header {
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Flexbox styles for product cards grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .col-md-4 {
+        flex: 1 0 calc(33.333% - 20px); // Adjust the width as needed
+    }
+}
+// The "display: flex" property is added to the .product-card class to arrange the content inside each card vertically.
+// Flex properties are used to control the spacing and alignment of elements within each card.
+// For the product card grid, Flexbox is applied to the .row class, which allows for a responsive and centered display of product cards.
