@@ -1,0 +1,62 @@
+.nav-link {
+    color: #efeded;
+    text-align: center;
+    background-color: #186735;
+    margin: 10px;  
+    background-color: #1c5a1c;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #1c5a1c;
+}
+
+
+
+.card {
+    border: 6px solid #ffd700; /* Use a gold color for the border */
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
+    padding: 0,5cm; /* Adds space between the content and border */
+    background-color: #6b3b27; /* Use a royal color for the background */
+    color: white;    
+    font-size: large;
+    padding: 15px;
+    margin: 30px;
+    transition: background-color 0.3s;
+    text-align: center;
+    background-color:  #186735;
+    
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+        border: 3px solid #ccc;
+        background-color: #d7d3d3;
+    }
+}
+
+/* Custom styles for the header */
+header {
+    background-color: #216038;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Flexbox styles for product cards grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-2 {
+    flex: 1 0 calc(33.333% - 20px); /* Adjust the width as needed */
+}
